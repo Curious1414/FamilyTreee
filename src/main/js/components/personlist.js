@@ -176,13 +176,13 @@ class Person extends React.Component{
 		
 		let id = getId(this.props.itemLink);
 		return (
-			<tr>
+			<tr style = {{backgroundColor: "pink"}}>
 				<td> 
 					<button onClick={ () => this.props.onSelect(this.props.itemLink)}>S</button> 
 					<button onClick={ () => this.props.onDelete(this.props.itemLink)}>D</button> 
 					<button onClick={ () => this.props.onEdit(this.props.itemLink)}>E</button></td>
 				<td>{id}</td>
-				<td style={{backgroundColor: "blue"}}>{this.props.person.firstName}</td>
+				<td>{this.props.person.firstName}2</td>
 				<td>{this.props.person.familyName}</td>
 				<td>{this.props.person.birth}</td>
 			</tr>
